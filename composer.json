@@ -1,12 +1,12 @@
 {
-  "name": "capsule-b/zoho-subscriptions-php-lib",
-  "description": "PHP Library for the Zoho Subscriptions API",
+  "name": "capsule-b/zoho-books-php-lib",
+  "description": "PHP Library for the Zoho Books API",
   "keywords": [
     "php", "library", "zoho", "subscriptions", "api"
   ],
   "type": "library",
   "license": "LGPL-3.0-or-later",
-  "homepage": "https://github.com/Blog-Ecommerce/zoho-subscriptions-php-lib",
+  "homepage": "https://github.com/Blog-Ecommerce/zoho-books-php-lib",
   "authors": [{
     "name": "Luis Da Costa",
     "email": "luis@blog-ecommerce.com",
@@ -21,8 +21,8 @@
     "phpunit/phpunit": "~4.0"
   },
   "support": {
-    "issues": "https://github.com/Blog-Ecommerce/zoho-subscriptions-php-lib/issues",
-    "source": "https://github.com/Blog-Ecommerce/zoho-subscriptions-php-lib"
+    "issues": "https://github.com/Blog-Ecommerce/zoho-books-php-lib/issues",
+    "source": "https://github.com/Blog-Ecommerce/zoho-books-php-lib"
   },
   "autoload": {
     "psr-4": {
