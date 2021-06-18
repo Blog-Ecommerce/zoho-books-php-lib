@@ -1,6 +1,6 @@
 <?php
 
-namespace CapsuleB\Zohobooks\Resources;
+namespace CapsuleB\ZohoBooks\Resources;
 
 use CapsuleB\ZohoBooks\Client;
 use Exception;

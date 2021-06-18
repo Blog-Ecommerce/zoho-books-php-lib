@@ -1,6 +1,6 @@
 <?php
 
-namespace CapsuleB\Zohobooks\Resources;
+namespace CapsuleB\ZohoBooks\Resources;
 
 use CapsuleB\ZohoBooks\Client;
 use Exception;
@@ -51,7 +51,7 @@ class CreditNotes {
    * @return mixed
    * @throws Exception
    */
-  public function listAll($query = []) {
+  public function listAll(array $query = []) {
     return $this->client->get([self::BASE_URL], $query);
   }
 

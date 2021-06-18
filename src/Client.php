@@ -1,7 +1,8 @@
 <?php
 
-namespace CapsuleB\Zohobooks;
+namespace CapsuleB\ZohoBooks;
 
+use Exception;
 use CapsuleB\ZohoBooks\Resources\CreditNotes;
 use CapsuleB\ZohoBooks\Resources\Invoices;
 use CapsuleB\ZohoBooks\Resources\Contacts;
@@ -51,14 +52,14 @@ class Client {
   /**
    * @param array $query
    */
-  protected function appendQuery($query = []) {
+  protected function appendQuery(array $query = []) {
     $this->requestQuery += $this->wrap($query);
   }
 
   /**
    * @param array $header
    */
-  protected function appendHeader($header = []) {
+  protected function appendHeader(array $header = []) {
     $this->requestHeader = array_merge($this->requestHeader, $this->wrap($header));
   }
 
@@ -79,7 +80,7 @@ class Client {
    * @return array|mixed|object
    * @throws Exception
    */
-  protected function request($method, $path, $query = [], $params = []) {
+  protected function request($method, $path, array $query = [], array $params = []) {
     // Reset any previous request
     $this->curlClient = curl_init();
 
@@ -130,7 +131,7 @@ class Client {
    * @return mixed
    * @throws Exception
    */
-  public function get($path, $query = [], $params = []) {
+  public function get($path, array $query = [], array $params = []) {
     return $this->request('GET', $path, $this->wrap($query), $this->wrap($params));
   }
 
@@ -143,7 +144,7 @@ class Client {
    * @return mixed
    * @throws Exception
    */
-  public function post($path, $query = [], $params = []) {
+  public function post($path, array $query = [], array $params = []) {
     return $this->request('POST', $path, $this->wrap($query), $this->wrap($params));
   }
 
@@ -156,7 +157,7 @@ class Client {
    * @return mixed
    * @throws Exception
    */
-  public function put($path, $query = [], $params = []) {
+  public function put($path, array $query = [], array $params = []) {
     return $this->request('PUT', $path, $this->wrap($query), $this->wrap($params));
   }
 
@@ -169,7 +170,7 @@ class Client {
    * @return mixed
    * @throws Exception
    */
-  public function delete($path, $query = [], $params = []) {
+  public function delete($path, array $query = [], array $params = []) {
     return $this->request('DELETE', $path, $this->wrap($query), $this->wrap($params));
   }
 
@@ -179,7 +180,7 @@ class Client {
    * @param  mixed  $value
    * @return array
    */
-  private static function wrap($value) {
+  private static function wrap($value): array {
     return !is_array($value) ? [$value] : $value;
   }
 }
