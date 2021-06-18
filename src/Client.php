@@ -3,7 +3,7 @@
 namespace CapsuleB\ZohoBooks;
 
 use Exception;
-use CapsuleB\ZohoBooks\Resources\CreditNotes;
+use CapsuleB\ZohoBooks\Resources\SalesOrder;
 use CapsuleB\ZohoBooks\Resources\Invoices;
 use CapsuleB\ZohoBooks\Resources\Contacts;
 
@@ -19,7 +19,7 @@ use CapsuleB\ZohoBooks\Resources\Contacts;
  *
  * @property Contacts $contacts
  * @property Invoices $invoices
- * @property CreditNotes $creditNotes
+ * @property SalesOrder $creditNotes
  */
 class Client {
 
@@ -46,7 +46,7 @@ class Client {
     // Init the Resources
     $this->contacts     = new Contacts($this);
     $this->invoices     = new Invoices($this);
-    $this->creditNotes  = new CreditNotes($this);
+    $this->creditNotes  = new SalesOrder($this);
   }
 
   /**

@@ -24,80 +24,229 @@ class Invoices {
   }
 
   /**
-   * Create an invoice
    *
-   * Create an invoice for your customer.
-   *
-   * @oauthscope : ZohoBooks.invoices.CREATE
+   * @throws Exception
    */
   public function create() {
-    return null;
+    throw new Exception('Not implemented');
   }
 
   /**
-   * Update an invoice
    *
-   * Update an existing invoice. To delete a line item just remove it from the line_items list.
-   *
-   * @oauthscope : ZohoBooks.invoices.UPDATE
+   * @throws Exception
    */
   public function update() {
-    return null;
+    throw new Exception('Not implemented');
   }
 
   /**
-   * Get an invoice
-   *
-   * Get the details of an invoice.
-   *
-   * @oauthscope : ZohoBooks.invoices.READ
-   * @param $invoiceId
-   * @return mixed
    * @throws Exception
    */
-  public function retrieve($invoiceId) {
-    return $this->client->get([self::BASE_URL, $invoiceId]);
+  public function get() {
+    throw new Exception('Not implemented');
   }
 
   /**
-   * List invoices
-   *
-   * List all invoices with pagination.
-   *
-   * @oauthscope : ZohoBooks.invoices.READ
-   * @param array $query
-   * @return mixed
    * @throws Exception
    */
-  public function listAll(array $query = []) {
-    return $this->client->get([self::BASE_URL], $query);
+  public function list() {
+    throw new Exception('Not implemented');
   }
 
   /**
-   * List credits applied
-   *
-   * Get the list of credits applied for an invoice.
-   *
-   * @oauthscope : ZohoBooks.invoices.READ
-   * @param $invoiceId
-   * @return mixed
    * @throws Exception
    */
-  public function listCreditsApplied($invoiceId) {
-    return $this->client->get([self::BASE_URL, $invoiceId, 'creditsapplied']);
+  public function delete() {
+    throw new Exception('Not implemented');
   }
 
   /**
-   * List invoice payments
-   *
-   * Get the list of payments made for an invoice.
-   *
-   * @oauthscope : ZohoBooks.invoices.READ
-   * @param $invoiceId
-   * @return mixed
    * @throws Exception
    */
-  public function listPayments($invoiceId) {
-    return $this->client->get([self::BASE_URL, $invoiceId, 'payments']);
+  public function markAsSent() {
+    throw new Exception('Not implemented');
   }
+
+  /**
+   * @throws Exception
+   */
+  public function void() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function markAsDraft() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function email() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function emailMultiple() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function submitForApproval() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function approve() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getContent() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function remindCustomer() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function bulkReminder() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getPaymentReminderMailContent() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function bulkExport() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function bulkPrint() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function disablePaymentReminder() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function enablePaymentReminder() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function writeOff() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function cancelWriteOff() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateBillingAddress() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateShippingAddress() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listTemplates() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateTemplate() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listPayments() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listCreditsApplied() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function applyCredits() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deletePayment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getAttachment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function addAttachment() {
+    throw new Exception('Not implemented');
+  }
+
 }

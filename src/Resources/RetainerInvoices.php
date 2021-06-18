@@ -6,17 +6,17 @@ use CapsuleB\ZohoBooks\Client;
 use Exception;
 
 /**
- * Class Contacts
+ * Class RetainerInvoices
  * @package ZohoBooks\Resources
  *
  * @property Client $client
  */
-class Contacts {
+class RetainerInvoices {
 
-  const BASE_URL = 'contacts';
+  const BASE_URL = 'retainerinvoices';
 
   /**
-   * Projects constructor.
+   * RetainerInvoices constructor.
    * @param Client $client
    */
   public function __construct(Client $client) {
@@ -24,7 +24,6 @@ class Contacts {
   }
 
   /**
-   *
    * @throws Exception
    */
   public function create() {
@@ -32,7 +31,6 @@ class Contacts {
   }
 
   /**
-   *
    * @throws Exception
    */
   public function update() {
@@ -40,173 +38,157 @@ class Contacts {
   }
 
   /**
-   * List Contacts
-   *
-   * List all contacts with pagination.
-   *
-   * @oauthscope : ZohoBooks.contacts.READ
-   * @return mixed
    * @throws Exception
    */
   public function list() {
-    return $this->client->get([self::BASE_URL]);
-  }
-
-  /**
-   * Get Contact
-   *
-   * Get details of a contact.
-   *
-   * @oauthscope : ZohoBooks.contacts.READ
-   * @param $id
-   * @return mixed
-   * @throws Exception
-   */
-  public function get($id) {
-    return $this->client->get([self::BASE_URL, $id]);
-  }
-
-  /**
-   *
-   * @throws Exception
-   */
-  public function delete($project) {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function markAsActive($project) {
+  public function get() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function markAsInactive($project) {
+  public function delete() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function enablePortalAccess($project) {
+  public function markAsSent() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function enablePaymentReminders($project) {
+  public function updateTemplate() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function disablePaymentReminders($project) {
+  public function void() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function emailStatement($project) {
+  public function markAsDraft() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function getStatementEmailContent($project) {
+  public function submitForApproval() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function email($project) {
+  public function approve() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function listComments($project) {
+  public function email() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function getAddresses($project) {
+  public function getEmailContent() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function addAdditionalAddress($project) {
+  public function updateBillingAddress() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function editAdditionalAddress($project) {
+  public function listTemplates() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function deleteAdditionalAddress($project) {
+  public function listPayments() {
     throw new Exception('Not implemented');
   }
 
   /**
-   *
    * @throws Exception
    */
-  public function listRefunds($project) {
+  public function deletePayment() {
     throw new Exception('Not implemented');
   }
 
   /**
-   * Track 1099
-   *
-   * @param $contactId
-   * @return mixed
    * @throws Exception
    */
-  public function track1099($contactId) {
-    $path = sprintf(self::BASE_URL . "/%s/track1099", $contactId);
-    return $this->client->post($path);
+  public function getAttachment() {
+    throw new Exception('Not implemented');
   }
 
   /**
-   * Untrack 1099
-   *
-   * @param $contactId
-   * @return mixed
    * @throws Exception
    */
-  public function untrack1099($contactId) {
-    $path = sprintf(self::BASE_URL . "/%s/untrack1099", $contactId);
-    return $this->client->post($path);
+  public function addAttachment() {
+    throw new Exception('Not implemented');
   }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteAttachment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listCommentsAndHistory() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function addComment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteComment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateComment() {
+    throw new Exception('Not implemented');
+  }
+
 }

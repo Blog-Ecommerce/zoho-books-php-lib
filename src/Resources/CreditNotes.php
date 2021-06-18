@@ -23,9 +23,19 @@ class CreditNotes {
     $this->client = $client;
   }
 
-  public function create() {}
+  /**
+   * @throws Exception
+   */
+  public function create() {
+    throw new Exception('Not implemented');
+  }
 
-  public function update() {}
+  /**
+   * @throws Exception
+   */
+  public function update() {
+    throw new Exception('Not implemented');
+  }
 
   /**
    * Get a credit note
@@ -53,6 +63,181 @@ class CreditNotes {
    */
   public function listAll(array $query = []) {
     return $this->client->get([self::BASE_URL], $query);
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function email() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function void() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function convertToDraft() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function convertToOpen() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function submitForApproval() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function approve() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function delete() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function emailHistory() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getEmailContent() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateBillingAddress() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateShippingAddress() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listTemplate() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateTemplate() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listInvoicesCredited() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function creditToAnInvoice() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteInvoicesCredited() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listCommentsAndHistory() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function addComment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteComment() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listRefunds() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listRefundsOf() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getRefund() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function refund() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function updateRefund() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteRefund() {
+    throw new Exception('Not implemented');
   }
 
 }

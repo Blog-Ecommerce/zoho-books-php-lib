@@ -1,0 +1,117 @@
+<?php
+
+namespace CapsuleB\ZohoBooks\Resources;
+
+use CapsuleB\ZohoBooks\Client;
+use Exception;
+
+/**
+ * Class Expenses
+ * @package ZohoBooks\Resources
+ *
+ * @property Client $client
+ */
+class Expenses {
+
+  const BASE_URL = 'expenses';
+
+  /**
+   * Expenses constructor.
+   * @param Client $client
+   */
+  public function __construct(Client $client) {
+    $this->client = $client;
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function create() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function update() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function list() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function get() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function delete() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listHistoryAndComments() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function listEmployees() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getEmployee() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function createEmployee() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteEmployee() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function getReceipt() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function addReceipt() {
+    throw new Exception('Not implemented');
+  }
+
+  /**
+   * @throws Exception
+   */
+  public function deleteReceipt() {
+    throw new Exception('Not implemented');
+  }
+
+}
