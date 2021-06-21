@@ -52,8 +52,6 @@ class CreditNotes {
   }
 
   /**
-   * List all Credit Notes
-   *
    * List all the Credit Notes.
    *
    * @oauthscope : ZohoBooks.creditnotes.READ

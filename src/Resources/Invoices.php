@@ -40,17 +40,21 @@ class Invoices {
   }
 
   /**
+   * @param $invoiceId
+   * @return array|mixed|object
    * @throws Exception
    */
-  public function get() {
-    throw new Exception('Not implemented');
+  public function get($invoiceId) {
+    return $this->client->get([self::BASE_URL, $invoiceId]);
   }
 
   /**
+   * @param array $query
+   * @return array|mixed|object
    * @throws Exception
    */
-  public function list() {
-    throw new Exception('Not implemented');
+  public function list(array $query = []) {
+    return $this->client->get([self::BASE_URL], $query);
   }
 
   /**
@@ -208,17 +212,21 @@ class Invoices {
   }
 
   /**
+   * @param $invoiceId
+   * @return array|mixed|object
    * @throws Exception
    */
-  public function listPayments() {
-    throw new Exception('Not implemented');
+  public function listPayments($invoiceId) {
+    return $this->client->get([self::BASE_URL, $invoiceId, 'payments']);
   }
 
   /**
+   * @param $invoiceId
+   * @return array|mixed|object
    * @throws Exception
    */
-  public function listCreditsApplied() {
-    throw new Exception('Not implemented');
+  public function listCreditsApplied($invoiceId) {
+    return $this->client->get([self::BASE_URL, $invoiceId, 'creditsapplied']);
   }
 
   /**
