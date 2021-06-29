@@ -35,7 +35,6 @@ use CapsuleB\ZohoBooks\Resources\Users;
 use CapsuleB\ZohoBooks\Resources\VendorCredits;
 use CapsuleB\ZohoBooks\Resources\VendorPayments;
 use Exception;
-use ReflectionException;
 
 /**
  * Class Client
@@ -87,8 +86,6 @@ use ReflectionException;
  */
 class Client {
 
-  const BASE_URL = 'https://books.zoho.eu/api/v3';
-
   /**
    * Client constructor.
    * @param string $clientId
@@ -96,6 +93,7 @@ class Client {
    * @param string|null $accessToken
    * @param string|null $refreshToken
    * @param string $dataCenter
+   * @throws Exception
    */
   public function __construct(string $clientId, string $clientSecret, string $accessToken = null, string $refreshToken = null, string $dataCenter = EDataCenter::UNITED_STATES) {
     $this->curlClient = curl_init();
@@ -148,14 +146,14 @@ class Client {
 
   /**
    * Inits the Base Url by checking which one to use base on region
-   * @throws ReflectionException
+   * @throws Exception
    */
   private function initBaseUrl() {
     if (empty($this->dataCenter) || !in_array($this->dataCenter, EDataCenter::getValues())) {
-      $this->baseApiUrl = "https://subscriptions.zoho.com/api/v1";
+      $this->baseApiUrl = "https://books.zoho.com/api/v3";
       $this->baseAuthUrl = "https://accounts.zoho.com";
     } else {
-      $this->baseApiUrl = "https://subscriptions.zoho{$this->dataCenter}/api/v1";
+      $this->baseApiUrl = "https://books.zoho{$this->dataCenter}/api/v3";
       $this->baseAuthUrl = "https://accounts.zoho{$this->dataCenter}";
     }
 
