@@ -150,7 +150,7 @@ class Client {
    */
   private function initBaseUrl() {
     if (empty($this->dataCenter) || !in_array($this->dataCenter, EDataCenter::getValues())) {
-      $this->baseApiUrl = "https://books.zoho.com/api/v3";
+      $this->baseApiUrl = "https://www.zohoapis.com/books/v3";
       $this->baseAuthUrl = "https://accounts.zoho.com";
     } else {
       $this->baseApiUrl = "https://books.zoho{$this->dataCenter}/api/v3";
